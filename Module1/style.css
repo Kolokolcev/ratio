@@ -1,3 +1,8 @@
+/* дефолтные стили указываются на body, если указано на html, то будет унаследовано у body */
+/* нет мин ширины страницы */
+/* не определены дефолтные стили для шрифтов font-weight, font-style и line-height */
+/* шрифты не подключены */
+/* для всех тегов не прописан глобально box-sizing: border-box; */
 html,body{
     margin: 0;
     padding: 0;
@@ -10,7 +15,8 @@ html,body{
     margin: 0 auto;
     padding: 0 10px;
 }
-
+/* отступы h1, h2, h3 и тд */
+/* h1,h2,h3,p отступ { */
 h1,h2,h3,p{
     margin: 0;
     padding: 0;
@@ -37,12 +43,13 @@ h1,h2,h3,p{
 }
 
 .nav_item{
+    /* цвета надо выносить в переменные*/
     color: #4B5D68;
     font-weight: 500;
     font-size: 16px;
     line-height: 160%;
 }
-
+/* дефолтные шрифты не с группированы в начала стилевого файла */
 ul{
     list-style: none;
     margin: 0;
@@ -177,6 +184,7 @@ a{
 }
 
 .bg1{
+    /*  shorthand - background: url(img/Rectangle3.svg) no-repeat right; */
     background: url(img/Rectangle3.svg);
     background-repeat: no-repeat;
     background-position: right;
@@ -238,11 +246,11 @@ a{
                                             /* Page4 */
 
 
- 
+
 .page4_inner{
     padding-top: 100px;
     margin-bottom: 150px;
-} 
+}
 
 .page4_inner_about{
     max-width: 1118px;
@@ -427,9 +435,9 @@ a{
     }
 
     .page1_button{
-       
+
         margin: 0 auto;
-        
+
     }
 
 
@@ -441,7 +449,7 @@ a{
         margin: 20px auto !important;
     }
 }
-    
+
 @media(max-width: 880px){
     .page2_inner_about{
         display: flex;
@@ -522,8 +530,8 @@ a{
     }
 
     .slide_img{
-        margin: 20px 
+        margin: 20px
     }
-   
+
 }
 
